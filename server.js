@@ -19,6 +19,8 @@ var options = new chrome.Options();
 options.addArguments( `--no-sandbox` );
 options.addExtensions(data.toString('base64'));
 
+let PORT = process.env.PORT || 2000;
+
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
@@ -67,6 +69,6 @@ app.use(bodyParser.json())
 });
 
 // listen for requests :)
-const listener = app.listen(2000, function() {
-  console.log('Your app is listening on port ' + 2000);
+const listener = app.listen(PORT, function() {
+  console.log(`Your app is listening on port ${PORT}`);
 });
