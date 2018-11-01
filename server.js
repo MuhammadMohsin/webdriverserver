@@ -5,6 +5,7 @@
 const express = require('express');
 const app = express();
 var bodyParser = require('body-parser');
+var chromedriver = require('chromedriver');
 var webdriver = require("selenium-webdriver"),
   By = webdriver.By,
   until = webdriver.until;
