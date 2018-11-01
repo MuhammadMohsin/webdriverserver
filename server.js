@@ -56,6 +56,7 @@ app.use(bodyParser.json())
         driver.findElement(By.xpath("//div[@class='mw-parser-output']/p[2]/a[9]")).click()).then(() =>
         driver.findElement(By.xpath("//div[@class='mw-parser-output']/p[3]/a[2]")).click()).then(() =>
         driver.findElement(By.xpath("//div[@class='mw-parser-output']/p[2]/a[5]")).click());
+        response.end();
     }
   }catch (err) {
     console.log(err);
