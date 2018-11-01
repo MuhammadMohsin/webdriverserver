@@ -7,13 +7,14 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.3",
     "body-parser": "1.18.3",
     "chrome": "^0.1.0",
-    "selenium-webdriver": "^4.0.0-alpha.1",
-    "wdio-devtools-service": "^0.1.5",
+    "chromedriver": "^2.43.1",
     "dotenv": "^5.0.1",
+    "express": "^4.16.3",
     "mongoose": "^5.1.0",
-    "nodemon": "^1.17.4"
+    "nodemon": "^1.17.4",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "wdio-devtools-service": "^0.1.5"
   }
 }
